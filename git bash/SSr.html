@@ -1,0 +1,246 @@
+<!DOCTPE.html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SSR</title>    
+<link rel="stylesheet" href="SSR.css">
+<link rel="stylesheet" href="bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">   
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    </head>
+<body>
+    
+<!---------------------------------------------------navbar_section_start-------------------------------------------------------------------------------->    
+    
+    
+   <nav class="navbar navbar-expand-lg navbar-light bg">
+   <a class="navbar-brand" href="#" style="margin-right: 108;margin-left: 30;font-family: 'Lora', serif;font-size:2.25rem ;color: white">SSR.</a>     
+  
+ 
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link HOME" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+  <a class="nav-link" href="#">Shop</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </li>
+        <li class="nav-item">
+              <div class="dropdown">
+  <a class="nav-link" href="#">Products</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </li>
+        <li class="nav-item">
+             <div class="dropdown">
+  <a class="nav-link" href="#">Pages</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </li>
+        <li class="nav-item">
+             <div class="dropdown">
+  <a class="nav-link" href="#">Blog</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </li>
+        <li class="nav-item">
+             <div class="dropdown">
+  <a class="nav-link" href="#">Contact</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </li>
+      
+    </ul>
+
+  </div>
+      
+       <div id="mySidenav_pro" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+<h1 class="heading_login">LOGIN YOUR ACCOUNT</h1>
+<form class="login">
+  <div class="form-group">
+    <label class="inputEp" for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label class="InputEP" for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>         
+</div>
+    
+          <div id="mySidenav_heart" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+
+</div>
+       
+        <div id="mySidenav_shop" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+
+</div>
+       
+         <div id="mySidenav_set" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+
+</div>     
+       
+       
+       <div class="nav_pro">   
+       <img class="profile" id="pro" src="user-profile%20(3).png" style="font-size:30px;cursor:pointer" onclick="openNav1()">
+       <img class="profile" id="heart" src="heart-shape-outline%20(1).png" style="font-size:30px;cursor:pointer" onclick="openNav2()">
+       <img class="profile" id="shop" src="shopping-trolley.png" style="font-size:30px;cursor:pointer" onclick="openNav3()">
+       <img class="profile" id="set" src="settings.png" style="font-size:30px;cursor:pointer" onclick="openNav4()">
+       </div>
+       
+       
+       
+        <form class="form-inline my-2 my-lg-0 search">
+      <input class="form-control mr-sm-2 search" type="search" placeholder="Search your products." aria-label="Search"> </form>
+       
+    
+       
+    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>   
+       
+</nav>
+    
+    
+   
+    
+    
+<!-------------------------------------------------navbar_section_over----------------------------------------------------------------------------------->
+<section class="section1">
+    <img id="epoxytable" src="epoxytableCUT.png">
+    <div class="heading_1 ">Amazing Epoxy table .</div>
+    <a href="https://www.facebook.com/" target="_blank"><img class="facebook1" src="facebook-logo.png"></a> 
+    <a href="https:www.twitter.com"target="_blank"><img class="twitter" src="twitter.png"></a> 
+    <a href="https:www.gmail.com"target="_blank"><img class="gmail" src="gmail.png"></a> 
+    <a href="https://in.pinterest.com/"target="_blank"><img class="pintrest" src="pinterest.png"></a>
+    
+    <div id="carouselExampleControls" class="carousel slide corousel_side" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="slid1">
+      <img src="epoxytableCUT.png" class="position" alt="...">
+    <h1 class="testing">Amazing Epoxy table .</h1>
+      <button type="button" class="btn btn-danger btn-lg btn_pos">Shop Now.</button> 
+    </div>
+    <div class="carousel-item" id="slid2">
+      <img src="epoxytable2.png" class="position2" alt="...">
+    <h1 class="testing">Amazing Epoxy table .</h1>
+        <button type="button" class="btn btn-danger btn-lg btn_pos">Shop Now.</button> 
+      </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>         
+    
+    
+    
+</section>
+    
+<section>
+<div class="row row_position">
+    <div class="col-lg-4 col-sm-6 img1"><a class="Discover" href="#">Discover.</a><h1 class="row_col1_heading">Coffee Table</h1><img class="row_col1_img" src="row_col!.png"></div>
+    <div class="col-lg-4 col-sm-6 img2"><a class="Discover" href="#">Discover.</a><h1 class="row_col2_heading">Wall Clock</h1><img class="row_col2_img" src="row_col2.png"></div>
+    <div class="col-lg-4 col-sm-12 img3"><a class="Discover" href="#">Discover.</a><h1 class="row_col3_heading">Table lamp</h1><img class="row_col3_img" src="row_col3.png"></div>    
+
+    
+</div>       
+
+</section>     
+    
+    
+<!-------------------------------------------------............JS............--------------------------------------------------------------------------->   
+    
+  <script type="text/javascript">
+function openNav1() {
+  document.getElementById("mySidenav_pro").style.width = "350px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function openNav2() {
+  document.getElementById("mySidenav_heart").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function openNav3() {
+  document.getElementById("mySidenav_shop").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+ function openNav4() {
+  document.getElementById("mySidenav_set").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+    
+     
+      
+function closeNav1() {
+  document.getElementById("mySidenav_pro").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}function closeNav2() {
+  document.getElementById("mySidenav_heart").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}function closeNav3() {
+  document.getElementById("mySidenav_shop").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}function closeNav4() {
+  document.getElementById("mySidenav_set").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>  
+    
+</body> 
+</html>
